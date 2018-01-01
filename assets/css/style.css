@@ -1,0 +1,58 @@
+body {
+  background-color: #333333;
+  color: #ffffff;
+}
+.cover-bg {
+  background: url('../images/cover.png') fixed center center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 0;
+}
+.navbar-default, footer {
+  width: 100%;
+  line-height: 40px;
+  background: transparent;
+}
+nav a {
+  color: #ffffff !important;
+}
+.label-label {
+  color: #ffffff;
+  margin: 1rem 0;
+  display: block;
+  padding: 1rem;
+}
+.badge:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.badge-error {
+  background-color: #da3b38;
+}
+.badge-error:hover {
+  background-color: #800806;
+}
+.badge-warning {
+  background-color: #f89b18;
+}
+.badge-warning:hover {
+  background-color: #885918;
+}
+.badge-success {
+  background-color: #0c720c;
+}
+.badge-success:hover {
+  background-color: #356635;
+}
+.badge-info {
+  background-color: #159edd;
+}
+.badge-info:hover {
+  background-color: #69b5db;
+}
+.badge-inverse {
+  background-color: #201f1f;
+}
+.badge-inverse:hover {
+  background-color: #161111;
+}

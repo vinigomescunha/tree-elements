@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tree Elements</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body></body>
+<script src="assets/js/tree-elements.js"></script>
+<script src="assets/js/route-components.js"></script>
+<script>
+  function getRoutes(routes) {
+    return {
+      // routes content
+      '#services': [
+        TreeElements(routes.navBar)('nav1'),
+        TreeElements(routes.linkServices)('services-list'),
+        TreeElements(routes.navBar)('nav2'),
+        TreeElements(routes.footer)('footer-prd')
+      ],
+      '#products': [
+        TreeElements(routes.navBar)('nav1'),
+        TreeElements(routes.linkProducts)('products-list'),
+        TreeElements(routes.footer)('footer-prd')
+      ],
+      '#contactUs': [
+        TreeElements(routes.navBar)('nav1'),
+        TreeElements(routes.linkContactUs)('contact-us'),
+        TreeElements(routes.navBar)('nav2'),
+        TreeElements(routes.footer)('footer-as')
+      ],
+      '#aboutUs': [
+        TreeElements(routes.navBar)('nav1'),
+        // TreeElements(routes.banner)('banner1'),
+        TreeElements(routes.linkAboutUs)('#aboutUs'),
+        TreeElements(routes.footer)('footer-as')
+      ],
+      'default': [
+        TreeElements(routes.navBar)('nav1'),
+        TreeElements(routes.banner)('banner1'),
+        TreeElements(routes.paragraphOne)('p1'),
+        TreeElements(routes.navBar)('nav2'),
+        TreeElements(routes.footer)('footer')
+      ]
+    };
+  }
+  routesFromFilejs(false, getRoutes);// switch to true to download new json from js 
+  //routesFromJson(getRoutes);
+</script>
+</html>
